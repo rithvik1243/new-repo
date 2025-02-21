@@ -7,7 +7,7 @@ default_args = {
     'retries': 5,
     'retry_delay': timedelta(minutes=2)
 }
-
+# hi rithvik
 def greet(ti, **kwargs):
     conf = kwargs.get('dag_run').conf
     first_name = ti.xcom_pull(task_ids='get_name', key='first_name')
