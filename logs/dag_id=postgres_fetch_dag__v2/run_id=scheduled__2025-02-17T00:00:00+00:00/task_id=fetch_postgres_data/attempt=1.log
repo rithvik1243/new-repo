@@ -1,0 +1,24 @@
+[2025-02-18T11:24:14.642+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-02-18T11:24:14.655+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: postgres_fetch_dag__v2.fetch_postgres_data scheduled__2025-02-17T00:00:00+00:00 [queued]>
+[2025-02-18T11:24:14.660+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: postgres_fetch_dag__v2.fetch_postgres_data scheduled__2025-02-17T00:00:00+00:00 [queued]>
+[2025-02-18T11:24:14.661+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 4
+[2025-02-18T11:24:14.671+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): fetch_postgres_data> on 2025-02-17 00:00:00+00:00
+[2025-02-18T11:24:14.677+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=1073) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-02-18T11:24:14.678+0000] {standard_task_runner.py:72} INFO - Started process 1074 to run task
+[2025-02-18T11:24:14.678+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'postgres_fetch_dag__v2', 'fetch_postgres_data', 'scheduled__2025-02-17T00:00:00+00:00', '--job-id', '545', '--raw', '--subdir', 'DAGS_FOLDER/retr.py', '--cfg-path', '/tmp/tmpmvw3_24a']
+[2025-02-18T11:24:14.679+0000] {standard_task_runner.py:105} INFO - Job 545: Subtask fetch_postgres_data
+[2025-02-18T11:24:14.718+0000] {task_command.py:467} INFO - Running <TaskInstance: postgres_fetch_dag__v2.fetch_postgres_data scheduled__2025-02-17T00:00:00+00:00 [running]> on host 063e621c401a
+[2025-02-18T11:24:14.787+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='postgres_fetch_dag__v2' AIRFLOW_CTX_TASK_ID='fetch_postgres_data' AIRFLOW_CTX_EXECUTION_DATE='2025-02-17T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-02-17T00:00:00+00:00'
+[2025-02-18T11:24:14.788+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-02-18T11:24:14.810+0000] {base.py:84} INFO - Retrieving connection 'postgres'
+[2025-02-18T11:24:14.941+0000] {logging_mixin.py:190} INFO - (1, 'mt24061', 'rithvik', 'reddy', datetime.date(2002, 11, 14), 21, 'rithvikreddy8768@gmail.com', '6303139716')
+[2025-02-18T11:24:14.942+0000] {logging_mixin.py:190} INFO - (2, 'mt24062', 'rakesh', 'reddy', datetime.date(2002, 10, 12), 22, 'rakesh9168@gmail.com', '9398057198')
+[2025-02-18T11:24:14.942+0000] {logging_mixin.py:190} INFO - (3, 'mt24063', 'sandeep', 'bhargav', datetime.date(2002, 1, 1), 21, 'sandeept6578@gmail.com', '7032546630')
+[2025-02-18T11:24:14.942+0000] {logging_mixin.py:190} INFO - (4, 'mt24064', 'nithin', 'reddy', datetime.date(2002, 11, 8), 21, 'nithingh342mail.com', '9392488023')
+[2025-02-18T11:24:14.942+0000] {logging_mixin.py:190} INFO - (5, 'mt24065', 'anudeep', 'jithendra', datetime.date(2002, 6, 3), 21, 'anudeepjithendra314@gmail.com', '9515541794')
+[2025-02-18T11:24:14.943+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-02-18T11:24:14.951+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-02-18T11:24:14.951+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=postgres_fetch_dag__v2, task_id=fetch_postgres_data, run_id=scheduled__2025-02-17T00:00:00+00:00, execution_date=20250217T000000, start_date=20250218T112414, end_date=20250218T112414
+[2025-02-18T11:24:14.972+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-02-18T11:24:14.984+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-02-18T11:24:14.985+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

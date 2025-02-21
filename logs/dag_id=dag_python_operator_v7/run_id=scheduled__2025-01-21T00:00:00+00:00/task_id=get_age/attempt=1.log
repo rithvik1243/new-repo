@@ -1,0 +1,18 @@
+[2025-02-18T11:05:12.945+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-02-18T11:05:12.966+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_python_operator_v7.get_age scheduled__2025-01-21T00:00:00+00:00 [queued]>
+[2025-02-18T11:05:12.980+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_python_operator_v7.get_age scheduled__2025-01-21T00:00:00+00:00 [queued]>
+[2025-02-18T11:05:12.980+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 6
+[2025-02-18T11:05:13.007+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): get_age> on 2025-01-21 00:00:00+00:00
+[2025-02-18T11:05:13.028+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'dag_python_operator_v7', 'get_age', 'scheduled__2025-01-21T00:00:00+00:00', '--job-id', '454', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmphq9mtrkk']
+[2025-02-18T11:05:13.032+0000] {standard_task_runner.py:105} INFO - Job 454: Subtask get_age
+[2025-02-18T11:05:13.035+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=215) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-02-18T11:05:13.037+0000] {standard_task_runner.py:72} INFO - Started process 218 to run task
+[2025-02-18T11:05:13.093+0000] {task_command.py:467} INFO - Running <TaskInstance: dag_python_operator_v7.get_age scheduled__2025-01-21T00:00:00+00:00 [running]> on host 063e621c401a
+[2025-02-18T11:05:13.247+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='sandeep' AIRFLOW_CTX_DAG_ID='dag_python_operator_v7' AIRFLOW_CTX_TASK_ID='get_age' AIRFLOW_CTX_EXECUTION_DATE='2025-01-21T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-01-21T00:00:00+00:00'
+[2025-02-18T11:05:13.248+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-02-18T11:05:13.349+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-02-18T11:05:13.374+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-02-18T11:05:13.375+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=dag_python_operator_v7, task_id=get_age, run_id=scheduled__2025-01-21T00:00:00+00:00, execution_date=20250121T000000, start_date=20250218T110512, end_date=20250218T110513
+[2025-02-18T11:05:13.420+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-02-18T11:05:13.459+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-02-18T11:05:13.463+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

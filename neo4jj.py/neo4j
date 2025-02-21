@@ -1,0 +1,21 @@
+from neo4j import GraphDatabase
+
+# Replace these values with your Neo4j connection details
+uri = "https://sandbox2.modak.com:7474/browser/"  # or the URI of your Neo4j instance (for Neo4j Aura, use the cloud URI)
+username = "mdm_syngenta"
+password = "ReU444y2COoM"
+
+# Initialize the driver
+driver = GraphDatabase.driver(uri, auth=(username, password))
+
+# Create a session
+with driver.session() as session:
+    # Run a simple query to test the connection
+    result = session.run("MATCH (n) RETURN n LIMIT 5")
+
+    # Print the result
+    for record in result:
+        print(record)
+
+# Close the driver connection after use
+driver.close()
